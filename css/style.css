@@ -18,10 +18,10 @@ background-color: #FBF4E5;
 }
 .sidebar header {
 font-size: 22px;
-color: white;
+color: rgb(114, 214, 119);
 text-align: center;
 line-height: 70PX;
-background: #063146;
+background: #000000;
 user-select: none;
 transition: all .5s ease;
 
@@ -32,11 +32,11 @@ height: 100%;
 width: 100%;
 line-height: 65px;
 font-size: 20px;
-color: white;
+color: rgb(20, 167, 57);
 padding-left: 40px;
 box-sizing: border-box;
-border top: 1px solid rgba(255,255,255,.1);
-border-bottom: 1px solid black
+border-top: 1px solid rgba(255, 0, 0, 0.1);
+border-bottom: 1px solid rgb(255, 255, 255)
 }
 #check{
     display: none;
@@ -45,14 +45,14 @@ border-bottom: 1px solid black
 label #btn,label #cancel{
 position: absolute;
 cursor: pointer;
-background: #042331;
+background: #00aeff;
 border-radius: 3px;
 }
 label #btn{
     left: 40px;
     top: 25px;
     font-size: 35 px;
-    color: red;
+    color: rgb(10, 155, 41);
     padding: 6px 12px;
     transition: all .5s;
 
@@ -63,7 +63,7 @@ label #cancel{
     left: 195px;
     top: 17px;
     font-size: 30px;
-    color: #0a5275;
+    color: #ffffff;
     padding: 4px 9px;
     transition: all .5s ease;
 
@@ -84,7 +84,7 @@ label #cancel{
     pointer-events: none;
 }
 section{
-background: url() no-repeat;
+background-color: black;
 background-position: center;
 background-size: cover;
 height: 100vh;
