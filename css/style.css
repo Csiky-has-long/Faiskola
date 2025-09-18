@@ -1,8 +1,6 @@
 body{
 font-family: 'Robot', sans-serif;
-background-image: url(../images/);
-background-size: 100%;
-
+background-color: beige;
 
 }
 *{
@@ -16,27 +14,28 @@ position: fixed;
 left: -250px;
 width: 250px;
 height: 100%;
-background-color: #FBF4E5;
+background-color: beige;
 transition: left 0.5s ease;
 
 }
 .sidebar header {
 font-size: 22px;
-color: rgb(114, 214, 119);
+color: beige;
 text-align: center;
 line-height: 70PX;
-background: #000000;
+background:  rgb(33, 141, 60);
 user-select: none;
 transition: all .5s ease;
 
 }
 .sidebar ul a {
 display: block;
+text-align: center;
 height: 10%;
-width: 10%;
+width: 20%;
 line-height: 65px;
 font-size: 20px;
-color: rgb(20, 167, 57);
+color: rgb(33, 141, 60);
 padding-left: 40px;
 box-sizing: border-box;
 border-top: 1px solid rgba(255, 0, 0, 0.1);
@@ -109,7 +108,34 @@ height: 100vh;
 transition: all .5s;
 
 }
-#video{
-margin-left: 200px;
+.video{
+width: 100%;
+height: 400px;
+position: absolute;
+z-index: -1;
+}
+article video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#lista{
+width: 100%;
+
+}
+#cim{
+text-align: center;
+color:  rgb(33, 141, 60);;
+
+    
+}
+#logo{
+border-radius: 100px;
+width: 20%;
+height: auto;
+margin-top: 40%;
+margin-left: 40%;
 
 }
