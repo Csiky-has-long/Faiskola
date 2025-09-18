@@ -1,5 +1,8 @@
 body{
 font-family: 'Robot', sans-serif;
+background-image: url(../images/);
+background-size: 100%;
+
 
 }
 *{
@@ -14,6 +17,7 @@ left: -250px;
 width: 250px;
 height: 100%;
 background-color: #FBF4E5;
+transition: left 0.5s ease;
 
 }
 .sidebar header {
@@ -28,8 +32,8 @@ transition: all .5s ease;
 }
 .sidebar ul a {
 display: block;
-height: 100%;
-width: 100%;
+height: 10%;
+width: 10%;
 line-height: 65px;
 font-size: 20px;
 color: rgb(20, 167, 57);
@@ -42,36 +46,50 @@ border-bottom: 1px solid rgb(255, 255, 255)
     display: none;
 
 }
-label #btn,label #cancel{
+label #sidebarbtn,label #cancel{
 position: absolute;
 cursor: pointer;
-background: #00aeff;
+background: #00ff73;
 border-radius: 3px;
 }
-label #btn{
+label #sidebarbtn{
     left: 40px;
     top: 25px;
-    font-size: 35 px;
+    font-size: 35px;
     color: rgb(10, 155, 41);
     padding: 6px 12px;
     transition: all .5s;
+    margin-top: 20px;
 
 
 }
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+  opacity: 1;
+  pointer-events: auto;
+}
 label #cancel{
     z-index: 1111;
-    left: 195px;
+    margin-top: 20px;
+    margin-left: 55px;
+    left: -195px;
     top: 17px;
     font-size: 30px;
     color: #ffffff;
     padding: 4px 9px;
     transition: all .5s ease;
-
+    appearance: none;
+    display: block;
+    cursor: pointer;
+    opacity: 0;
 }
 #check:checked ~ .sidebar{
     left:0;
 }
-#check:checked ~ .label #btn{
+#check:checked ~ .label #sidebarbtn{
 
         left:250px;
     opacity: 0;
@@ -89,5 +107,9 @@ background-position: center;
 background-size: cover;
 height: 100vh;
 transition: all .5s;
+
+}
+#video{
+margin-left: 200px;
 
 }
