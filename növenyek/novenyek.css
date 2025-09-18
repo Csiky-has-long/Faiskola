@@ -1,25 +1,38 @@
-table{
-    border-collapse: collapse;
-    margin: 20px;
-    width: 100%;
-    height: 100%;
-    border: 5px solid black;
-    table-layout: fixed;
+/* Táblázat kitölti az egész oldalt */
+.galeria {
+  width: 100%;
+  height: 100vh;           /* teljes böngésző magasság */
+  border-collapse: collapse;
+  table-layout: fixed;     /* minden oszlop egyforma */
+  border: 3px solid black;
 }
 
-td{
-    padding: 5px;
-    border: 2px solid black;
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    vertical-align: top;
+/* Cellák azonos méretben */
+.galeria td {
+  border: 2px solid black;
+  width: 33.33%;          /* három oszlop = egyforma szélesség */
+  height: calc(100vh / 3); /* három sor = egyforma magasság */
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
 }
 
+/* Kép tölti ki a cella felső részét */
+.galeria img {
+  width: 100%;
+  height: 80%;            /* a cella 80%-át a kép foglalja el */
+  object-fit: cover;      /* kitölti, ha kell vág */
+  display: block;
+}
 
-img{
-    height: 90%;
-    width: 100%;
-    margin-right: 10px;
-    margin-bottom: 10px;
+/* Felirat a kép alatt */
+.galeria p {
+  height: 20%;            /* a cella alsó 20%-a a szöveg */
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #f7f7f7;
+  font-size: 70px;
 }
