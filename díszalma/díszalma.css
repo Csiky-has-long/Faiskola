@@ -7,24 +7,6 @@ body {
   text-align: center; /* középre igazítja a tartalmat */
 }
 
-/* Bal oldali sáv */
-.sidebar {
-  background-color: #fff;
-  padding: 10px;
-  width: 160px;
-  display: inline-block; /* inline-block, hogy ne vegyen teljes sort */
-  vertical-align: top; /* a tartalom tetejéhez igazítva */
-  text-align: left; /* a link belül balra legyen */
-  margin-right: 20px; /* kis távolság a tartalomtól */
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: green;
-  font-weight: bold;
-}
 
 /* Fő tartalom */
 .content {
