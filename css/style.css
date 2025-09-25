@@ -101,7 +101,7 @@ label #cancel{
     pointer-events: none;
 }
 section{
-background-color: black;
+background-color: beige;
 background-position: center;
 background-size: cover;
 height: 100vh;
