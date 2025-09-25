@@ -33,6 +33,7 @@
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  background: #f7f7f7;
-  font-size: 70px;
+  background: beige;
+  font-size: 40px;
+  color: rgb(33, 141, 60);
 }
