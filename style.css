@@ -150,3 +150,99 @@ div.szöveg{
     border: 2px solid black;
     border-radius: 10px;
 }
+
+
+/* Alapbeállítások */
+#elerhetoseg {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+#elerhetoseg h2, 
+#elerhetoseg h3, 
+#elerhetoseg h4 {
+  margin-bottom: 0.5rem;
+}
+
+/* Konténer: két hasáb, mobilon egyoszlopos */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Bal oldali info blokk */
+.contact-info p, 
+.contact-info ul {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* Térkép beágyazás */
+.map iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Jobb oldali űrlap */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-form label {
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0077ff;
+  box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+/* Gomb */
+.contact-form button {
+  align-self: flex-start;
+  background-color: #0077ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #005fcc;
+}
