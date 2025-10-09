@@ -1,8 +1,14 @@
 /* Teljes oldal háttér és betűk */
 body {
+  background-color: #f7f7f7; /* világos szürke háttér */
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   text-align: center; /* középre igazítja a tartalmat */
+  
+  
 }
+
 
 
 /* Fő tartalom */
@@ -10,10 +16,11 @@ body {
   display: inline-block; /* inline-block a középre igazításhoz */
   text-align: left; /* szöveg balra igazítva */
   max-width: 600px; /* ne legyen túl széles */
-  background-color: beige;
+  background-color: #fff;
   padding: 20px;
   border-radius: 5px;
-  color: rgb(33, 141, 60);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-height: 750px;
 }
 
 /* Cím */
@@ -38,5 +45,5 @@ body {
 }
 
 .content strong {
-  color: rgb(33, 141, 60);;
+  color: green;
 }
