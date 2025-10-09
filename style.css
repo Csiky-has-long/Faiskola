@@ -139,3 +139,14 @@ margin-top: 40%;
 margin-left: 40%;
 
 }
+
+div.szöveg{
+    max-width: 900px;
+    margin: 500px auto 0 auto; 
+    padding: 10px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-align: justify;
+    border: 2px solid black;
+    border-radius: 10px;
+}
